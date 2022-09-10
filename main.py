@@ -19,14 +19,14 @@ with open('Data_Scraping_Task_NG.csv', 'w', encoding='utf8', newline='') as f:
 
     # Creating Header for CSV file
     header = ['Company Name', 'Company Description', 'Company Rating', 'Company Reviews', "Min Project Budget",
-              "Avg. Hourly Rate", "Company Size", 'Company Location', 'Company Contact', 'Contact Number',
+              "Avg. Hourly Rate", "Company Size", 'Company Location','Contact Number', 'Company Contact Request',
               'Company Focus', 'company Website',
               ]
     # Write Header
     thewriter.writerow(header)
 
     # Number of result pages
-    pages = 80
+    pages = 81
 
     # Loop through Pages (1 - 80)
     for page in range(1, pages + 1):
